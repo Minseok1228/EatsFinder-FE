@@ -1,6 +1,6 @@
 import { SVGArrowProps } from '@/types/props';
 
-export const ArrowSVG = ({ direction, color, clasName }: SVGArrowProps) => {
+export const ArrowSVG = ({ direction, color, className }: SVGArrowProps) => {
   const pathData = (() => {
     switch (direction) {
       case 'down':
@@ -25,7 +25,7 @@ export const ArrowSVG = ({ direction, color, clasName }: SVGArrowProps) => {
   })();
   return (
     <svg
-      className={clasName}
+      className={className}
       width='24'
       height='24'
       viewBox='0 0 24 24'

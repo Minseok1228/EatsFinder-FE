@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { useTimer } from './useTimer';
 import { EmailConfirmType } from '@/types/authType';
-import { debounce } from 'lodash';
 import { emailRegex } from '@/utils/zodSchema';
 import {
   FieldValues,
@@ -11,6 +10,7 @@ import {
 } from 'react-hook-form';
 import { KOTLIN_SERVER } from '@/constants/baseUrl';
 import { useToast } from '@/provider/contextProvider/ToastProvider';
+import { debounce } from 'lodash';
 
 export const useEmailConfirm = <
   T extends FieldValues & { codeValidation?: boolean },

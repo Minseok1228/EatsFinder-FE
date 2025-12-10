@@ -12,7 +12,7 @@ export const OptionButton = ({ children, ...props }: ButtonProps) => {
       )}
     >
       {children}
-      <ArrowSVG clasName='w-5 h-5 lg:hidden' direction='right' />
+      <ArrowSVG className='h-5 w-5 lg:hidden' direction='right' />
     </button>
   );
 };
